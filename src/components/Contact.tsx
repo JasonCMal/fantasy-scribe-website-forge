@@ -32,7 +32,7 @@ export const Contact = () => {
     <section id="contact" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-amber-400 mb-6">
+          <h2 className="font-fantasy text-4xl md:text-5xl font-bold text-amber-400 mb-6">
             Get In Touch
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-8"></div>
@@ -44,9 +44,9 @@ export const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Contact Form */}
-          <Card className="bg-slate-800/50 border-amber-500/20">
+          <Card className="bg-slate-900/50 border-amber-500/20">
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold text-amber-400 mb-6">Send a Message</h3>
+              <h3 className="font-fantasy text-2xl font-bold text-amber-400 mb-6">Send a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <Input
@@ -54,7 +54,7 @@ export const Contact = () => {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="bg-slate-700/50 border-slate-600 text-slate-200 placeholder-slate-400"
+                    className="bg-slate-800/50 border-slate-600 text-slate-200 placeholder-slate-400"
                     required
                   />
                 </div>
@@ -65,7 +65,7 @@ export const Contact = () => {
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="bg-slate-700/50 border-slate-600 text-slate-200 placeholder-slate-400"
+                    className="bg-slate-800/50 border-slate-600 text-slate-200 placeholder-slate-400"
                     required
                   />
                 </div>
@@ -76,7 +76,7 @@ export const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="bg-slate-700/50 border-slate-600 text-slate-200 placeholder-slate-400 resize-none"
+                    className="bg-slate-800/50 border-slate-600 text-slate-200 placeholder-slate-400 resize-none"
                     required
                   />
                 </div>
@@ -93,9 +93,9 @@ export const Contact = () => {
 
           {/* Contact Info & Social */}
           <div className="space-y-6">
-            <Card className="bg-slate-800/50 border-amber-500/20">
+            <Card className="bg-slate-900/50 border-amber-500/20">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-amber-400 mb-4">Connect With Me</h3>
+                <h3 className="font-fantasy text-2xl font-bold text-amber-400 mb-4">Connect With Me</h3>
                 <p className="text-slate-300 mb-6">
                   Follow my writing journey and get updates on new releases, 
                   behind-the-scenes content, and fantasy book recommendations.
@@ -120,16 +120,16 @@ export const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-slate-800/50 border-amber-500/20">
+            <Card className="bg-slate-900/50 border-amber-500/20">
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-amber-400 mb-4">Newsletter</h3>
+                <h3 className="font-fantasy text-xl font-bold text-amber-400 mb-4">Newsletter</h3>
                 <p className="text-slate-300 mb-4">
                   Subscribe to get notified about new releases and exclusive content.
                 </p>
                 <div className="flex gap-2">
                   <Input 
                     placeholder="Enter your email"
-                    className="bg-slate-700/50 border-slate-600 text-slate-200 placeholder-slate-400"
+                    className="bg-slate-800/50 border-slate-600 text-slate-200 placeholder-slate-400"
                   />
                   <Button className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-semibold">
                     Subscribe

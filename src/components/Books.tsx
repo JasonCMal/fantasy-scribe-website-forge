@@ -32,10 +32,10 @@ export const Books = () => {
   ];
 
   return (
-    <section id="books" className="py-20 px-4 bg-slate-800/30">
+    <section id="books" className="py-20 px-4 bg-slate-900/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-amber-400 mb-6">
+          <h2 className="font-fantasy text-4xl md:text-5xl font-bold text-amber-400 mb-6">
             My Books
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-8"></div>
@@ -46,10 +46,10 @@ export const Books = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {books.map((book, index) => (
-            <Card key={index} className="bg-slate-800/50 border-amber-500/20 hover:border-amber-500/40 transition-all duration-300 hover:transform hover:scale-105 group">
+            <Card key={index} className="bg-slate-900/50 border-amber-500/20 hover:border-amber-500/40 transition-all duration-300 hover:transform hover:scale-105 group">
               <CardContent className="p-6">
                 {/* Book cover placeholder */}
-                <div className="aspect-[3/4] bg-gradient-to-br from-slate-700 to-slate-900 rounded-lg mb-4 border border-amber-500/20 flex items-center justify-center group-hover:shadow-lg group-hover:shadow-amber-500/20 transition-all duration-300">
+                <div className="aspect-[3/4] bg-gradient-to-br from-slate-800 to-slate-950 rounded-lg mb-4 border border-amber-500/20 flex items-center justify-center group-hover:shadow-lg group-hover:shadow-amber-500/20 transition-all duration-300">
                   <div className="text-slate-400 text-center">
                     <div className="text-6xl mb-2">📖</div>
                     <p className="text-sm">Book Cover</p>
@@ -58,7 +58,7 @@ export const Books = () => {
 
                 <div className="space-y-3">
                   <div>
-                    <h3 className="text-xl font-bold text-amber-400 mb-1">{book.title}</h3>
+                    <h3 className="font-fantasy text-xl font-bold text-amber-400 mb-1">{book.title}</h3>
                     <p className="text-sm text-amber-300/80">{book.series}</p>
                   </div>
 

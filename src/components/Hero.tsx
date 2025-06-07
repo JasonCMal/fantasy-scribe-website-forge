@@ -16,7 +16,7 @@ export const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-blue-500/10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-blue-800/20"></div>
       
       {/* Animated particles effect */}
       <div className="absolute inset-0">
@@ -35,7 +35,7 @@ export const Hero = () => {
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent leading-tight">
+        <h1 className="font-fantasy text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent leading-tight">
           Epic Fantasy
           <br />
           Awaits

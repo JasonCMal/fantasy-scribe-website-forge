@@ -7,7 +7,7 @@ export const About = () => {
     <section id="about" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-amber-400 mb-6">
+          <h2 className="font-fantasy text-4xl md:text-5xl font-bold text-amber-400 mb-6">
             About the Author
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-8"></div>
@@ -16,7 +16,7 @@ export const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Author image placeholder */}
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg shadow-2xl border border-amber-500/20 flex items-center justify-center">
+            <div className="aspect-square bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg shadow-2xl border border-amber-500/20 flex items-center justify-center">
               <div className="text-center text-slate-400">
                 <Feather size={64} className="mx-auto mb-4" />
                 <p>Your Author Photo</p>
@@ -36,17 +36,17 @@ export const About = () => {
 
             {/* Stats/Achievements */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-              <Card className="bg-slate-800/50 border-amber-500/20 p-4 text-center">
+              <Card className="bg-slate-900/50 border-amber-500/20 p-4 text-center">
                 <BookOpen className="text-amber-400 mx-auto mb-2" size={32} />
                 <div className="text-2xl font-bold text-amber-400">5+</div>
                 <div className="text-slate-300 text-sm">Published Books</div>
               </Card>
-              <Card className="bg-slate-800/50 border-amber-500/20 p-4 text-center">
+              <Card className="bg-slate-900/50 border-amber-500/20 p-4 text-center">
                 <Award className="text-amber-400 mx-auto mb-2" size={32} />
                 <div className="text-2xl font-bold text-amber-400">10K+</div>
                 <div className="text-slate-300 text-sm">Happy Readers</div>
               </Card>
-              <Card className="bg-slate-800/50 border-amber-500/20 p-4 text-center">
+              <Card className="bg-slate-900/50 border-amber-500/20 p-4 text-center">
                 <Feather className="text-amber-400 mx-auto mb-2" size={32} />
                 <div className="text-2xl font-bold text-amber-400">3</div>
                 <div className="text-slate-300 text-sm">Series</div>
