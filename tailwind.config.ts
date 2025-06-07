@@ -21,6 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'fantasy': ['Cinzel', 'serif'],
+				'runes': ['Uncial Antiqua', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -65,7 +66,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom Godspeaker theme colors
+				'ancient-gold': 'hsl(var(--ancient-gold))',
+				'deep-forest': 'hsl(var(--deep-forest))',
+				'otherworld-mist': 'hsl(var(--otherworld-mist))',
+				'blood-crimson': 'hsl(var(--blood-crimson))',
+				'dawn-amber': 'hsl(var(--dawn-amber))',
+				'rune-silver': 'hsl(var(--rune-silver))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -88,11 +96,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'ethereal-drift': {
+					'0%, 100%': {
+						transform: 'translateY(0px) rotate(0deg)',
+						opacity: '0.3'
+					},
+					'50%': {
+						transform: 'translateY(-20px) rotate(180deg)',
+						opacity: '0.7'
+					}
+				},
+				'runic-pulse': {
+					'0%, 100%': {
+						opacity: '0.4',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '0.8',
+						transform: 'scale(1.05)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'ethereal-drift': 'ethereal-drift 8s ease-in-out infinite',
+				'runic-pulse': 'runic-pulse 3s ease-in-out infinite'
 			}
 		}
 	},
